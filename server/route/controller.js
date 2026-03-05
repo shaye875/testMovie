@@ -9,7 +9,6 @@ route.get("/movies", async (req, res) => {
 })
 
 
-route.get("/purchases/:id",async(req,res)=>{
-    const {id} = req.params
-    res.json(await getSetsId(id))
+route.get("/purchases",async(req,res)=>{
+    res.json(await getSetsId())
 })
